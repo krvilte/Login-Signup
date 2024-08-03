@@ -1,8 +1,17 @@
 $primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$dark-col: #151515;
+$dark-col: #1f1f1f;
 $light-col: #FDFFFC;
-$primary-col: #2EB086;
+$primary-col: #379777;
 $danger-col: #c31a1d;
 $warning-col:#F4CE14;
-// $secondary-col:;
-// $success-col:;
+$success-col:#379777;
+
+@mixin input-field{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid $light-col;
+  background-color: transparent;
+  color: $light-col;
+}
