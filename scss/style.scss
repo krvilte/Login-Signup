@@ -22,7 +22,7 @@ body{
 }
 
 
-.container{
+.login-form-validation{
   width: 350px;
   position: absolute;
   top: 50%;
@@ -36,15 +36,14 @@ body{
     gap: 15px;
     
     input{
-      @mixin input-field;
-      &::placeholder{
-        font-size: 16px;
-        color: $light-col;
-      }
+    @include input-field;
+    &::placeholder{
+      font-size: 16px;
+      color: $light-col;
+    }
     }small{
       color: $danger-col;
       font-family: $primary-font;
-      display: none;
       font-size: 14px;
     }
   }
@@ -58,7 +57,7 @@ body{
     font-family: $primary-font;
     margin: 20px 0;
     &:hover{
-
+      color: $primary-col;
     }
   }
 }
@@ -109,5 +108,8 @@ body{
     text-decoration: none;
     color: $primary-col;
     font-weight: 500;
+    &:hover{
+      color: $light-col;
+    }
   }
 }
